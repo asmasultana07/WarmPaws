@@ -20,11 +20,11 @@ const Slider = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper  bg-linear-to-r from-[#979fc3] to-[#065265]"
       >
-        <SwiperSlide><img  className="w-full h-[600px] object-contain" src={i1} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="w-full h-[600px] object-contain" src={i2} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="w-full h-[600px] object-cover" src={i3} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="w-full h-[600px] object-contain" src={i4} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="w-full h-[600px] object-cover" src={i5} alt="" /></SwiperSlide>
+        <SwiperSlide><img  className="w-full h-[500px] object-contain" src={i1} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="w-full h-[500px] object-contain" src={i2} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="w-full h-[500px] object-cover" src={i3} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="w-full h-[500px] object-contain" src={i4} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="w-full h-[500px] object-cover" src={i5} alt="" /></SwiperSlide>
         
       </Swiper>
     </div>
