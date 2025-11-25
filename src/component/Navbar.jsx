@@ -5,7 +5,7 @@ import logoImage from "../assets/logo.webp"
 const Navbar = () => {
 
     const getNavActive = ({ isActive }) => {
-    const navLink = "border-b  border-[#632EE3] text-[16px] font-semibold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent";
+    const navLink = "border-b rounded-none border-[#632EE3] text-[18px] font-semibold bg-linear-to-r from-[#2e52e3] to-[#065265] bg-clip-text text-transparent";
     const navLinkActive = "text-[16px] font-medium";
 
     return isActive ? navLink : navLinkActive; 
@@ -39,10 +39,10 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <NavLink to="/" className="font-semibold ">Home</NavLink>
+                <NavLink to="/" className={getNavActive } >Home</NavLink>
               </li>
               <li>
-                <NavLink to="/service">Services</NavLink>
+                <NavLink to="/service" className={getNavActive}>Services</NavLink>
               </li>
             </ul>
           </div>
@@ -50,14 +50,14 @@ const Navbar = () => {
           <Link to="/">
             <div className="flex justify-center items-center">
               <img src={logoImage} alt="" className="w-8 h-8" />
-              <a className="btn btn-ghost p-1 text-lg  bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+              <a className="btn btn-ghost p-1 text-lg  bg-linear-to-r from-[#2e52e3] to-[#065265] bg-clip-text text-transparent">
                 WarmPaws
               </a>
             </div>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 text-[18px]">
             <li>
               <NavLink to="/" className={getNavActive}>
                 
