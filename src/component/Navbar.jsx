@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
 import logoImage from "../assets/logo.webp"
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 const Navbar = () => {
 
@@ -76,16 +78,16 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end flex gap-1 md:gap-3">
-          <a
+          <Link to="/signup"
             className="px-3 rounded-md text-white text-[16px] font-semibold btn 
                                 bg-linear-to-r from-[#2e52e3] to-[#065265] hover:from-blue-300 hover:to-purple-300"
           > Register
-          </a>
-          <a
+          </Link>
+          <Link to="/login"
             className="px-3 border-2 rounded-md text-[#2e52e3] text-[16px] font-semibold  btn 
                                 bg-linear-to-r from-[#cfd2de] to-[#a7d1dc] hover:from-white hover:to-purple-300"
           > Login
-          </a>
+          </Link>
           
         </div>
       </div>
