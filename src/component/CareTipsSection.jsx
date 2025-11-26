@@ -35,13 +35,15 @@ const CareTipsSection = () => {
         <div>
         <h2 className="font-bold text-3xl text-center">Winter Care Tips for Pets</h2>
 
-     </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
-        {tipsData.map((tip) => (
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+        {
+        tipsData.map((tip) => (
           <div key={tip.id} className=" py-2 card bg-base-100 w-96 shadow-lg">
-            
-            </div>
-            </div>
+          </div>
+        ))}
+        </div>
+           
      </div>
     )
 }
