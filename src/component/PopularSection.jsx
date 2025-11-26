@@ -13,17 +13,17 @@ const PopularSection = () => {
   console.log(services);
 
   return (
-    <div className="mt-8 px-10 md:px-30">
+    <div className="px-10 sm:px-20 md:px-30 mt-20">
       <div>
-        <h3 className="font-bold text-3xl text-center">
+        <h3 className="font-bold text-blue-800  text-3xl text-center">
           Popular Winter Care Services
         </h3>
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 my-10">
-        {services.map((service) => (
+        {services.slice(0,3).map((service) => (
         <div>
-          <div className="card bg-base-100 w-96 shadow-md">
+          <div className="card bg-base-100  shadow-md">
             <figure>
               <img className="w-full h-[300px] object-cover"
                 src={service?.image}

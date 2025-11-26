@@ -26,13 +26,13 @@ const Footer = () => {
             The Perfect Choice for Your Pet Care 
           </p>
           <div className="flex flex-row gap-3 mt-3">
-            <a href="" className="flex gap-3"><Twitter className="border-b-white rounded-b-full-full"/> </a>
+            <a href="" className="flex gap-3"><Twitter className="border-b-white rounded-b-full"/> </a>
             <a href="" className="flex gap-3"><Linkedin /> </a>
             <a href="" className="flex gap-3"><Facebook/> </a>
             <a href="" className="flex gap-3"><Mail/> </a>
         </div>
         </aside>
-        <div className=" footer flex flex-rows gap-4 sm:gap-20 mt-10 ">
+        <div className=" footer flex flex-rows gap-4 sm:gap-20 sm:mt-20 ">
           <nav className="font-semibold">
           <h6 className="footer-title text-xl">Services</h6>
           <a className="link link-hover">Branding</a>

@@ -26,12 +26,12 @@ const meetData = [
 
 const MeetSection = () => {
   return (
-    <div className="px-10 md:px-30 mt-10">
-      <h2 className="font-bold text-3xl text-center">Meet Our Expert Vets</h2>
+    <div className="px-10 md:px-30 mt-20">
+      <h2 className="font-bold text-blue-800  text-3xl text-center">Meet Our Expert Vets</h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
         {meetData.map((vet) => (
-          <div key={vet.id} className=" py-2 card bg-base-100 w-96 shadow-lg">
+          <div key={vet.id} className=" py-2 card bg-base-100 shadow-lg">
             <figure className="px-10 pt-10">
               <img
                 src={vet.image}
