@@ -1,22 +1,33 @@
 import { Link } from "react-router";
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
+
+  const {registerWithEmailPassword} = useContext(AuthContext);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const pass = e.target.password.value;
+    registerWithEmailPassword(email,pass);
+  }
+  
   return ( 
     <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
          
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <div className="card-body">
-              <fieldset className="fieldset">
+              <form onSubmit={handleSubmit} className="fieldset">
                 <label className="label">First Name</label>
-                <input type="name" className="input" placeholder="Your First Name" />
+                <input name="name" type="name" className="input" placeholder="Your First Name" />
                 <label className="label">Last Name</label>
                 <input type="name" className="input" placeholder="Your Last Name" />
                 <label className="label">Email</label>
-                <input type="email" className="input" placeholder="Your Email" />
+                <input name="email" type="email" className="input" placeholder="Your Email" />
                 <label className="label">Password</label>
-                <input
+                <input name="password"
                   type="password"
                   className="input"
                   placeholder="Password"
@@ -30,7 +41,7 @@ const Register = () => {
                     
                 </div>
                 <button className="btn btn-primary text-[16px] mt-4">Register</button>
-              </fieldset>
+              </form>
             </div>
           </div>
         </div>
